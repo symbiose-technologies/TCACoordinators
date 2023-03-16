@@ -1,11 +1,11 @@
-// swift-tools-version:5.4
+// swift-tools-version:5.7
 
 import PackageDescription
 
 let package = Package(
   name: "TCACoordinators",
   platforms: [
-    .iOS(.v13), .watchOS(.v7), .macOS(.v11), .tvOS(.v13),
+    .iOS(.v16), .watchOS(.v7), .macOS(.v13), .tvOS(.v13),
   ],
   products: [
     .library(
@@ -13,7 +13,7 @@ let package = Package(
       targets: ["TCACoordinators"]),
   ],
   dependencies: [
-    .package(url: "https://github.com/johnpatrickmorgan/FlowStacks", from: "0.3.0"),
+    .package(url: "https://github.com/symbiose-technologies/FlowStacks", branch: "symbiose"),
     .package(url: "https://github.com/pointfreeco/swift-composable-architecture", from: "0.45.0"),
   ],
   targets: [
